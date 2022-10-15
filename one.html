@@ -1,0 +1,449 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>吃货研究所</title>
+	<style type="text/css">
+		*{
+		    font-family: 微软雅黑;
+		    margin:0;
+		    padding:0;
+		    list-style:none;
+		    outline:none;
+		    border:0;
+		}
+		body{
+		    overflow-x:hidden;
+		    /*background-image: url("bg_tu1.gif");*/
+		    background-color: #FAEFEFEF;
+		    /*设置背景图片*/
+		    /*background-attachment: fixed;*/
+		}
+		
+		a:link {
+		    color:black;
+		    text-decoration:none;
+		}
+		
+		a:visited {
+		    color:black;
+		    text-decoration:none;
+		}
+		
+		a:hover {
+		    color: black;
+		    text-decoration:none;
+		}
+		
+		a:active {
+		    color: black;
+		    text-decoration:none;
+		}
+		
+		/***鼠标悬浮图片旋转360度 begin***/
+		.xwcms {
+		    margin: 0 auto;
+		    margin-top: 25px;
+		    -webkit-border-radius: 110px;
+		    border-radius: 110px;
+		    -webkit-transition: -webkit-transform 0.4s ease-out;
+		    -moz-transition: -moz-transform 0.4s ease-out;
+		    -o-transition: -o-transform 0.4s ease-out;
+		    -ms-transition: -ms-transform 0.4s ease-out;
+		    width:80px;
+		    height:80px;
+		    box-shadow:0 0 0 4px #fff;
+		    float:left;
+		    margin-left:30px;
+		}
+		.xwcms:hover {
+		    -webkit-transform: rotateZ(360deg);
+		    -moz-transform: rotateZ(360deg);
+		    -o-transform: rotateZ(360deg);
+		    -ms-transform: rotateZ(360deg);
+		    transform: rotateZ(360deg);
+		}
+		/***鼠标悬浮图片旋转360度 begin***/
+		
+		
+		/***鼠标悬浮图片旋转360度 begin***/
+		.xwcms2 {
+		    margin: 0 auto;
+		    -webkit-border-radius: 110px;
+		    border-radius: 110px;
+		    -webkit-transition: -webkit-transform 0.4s ease-out;
+		    -moz-transition: -moz-transform 0.4s ease-out;
+		    -o-transition: -o-transform 0.4s ease-out;
+		    -ms-transition: -ms-transform 0.4s ease-out;
+		    width:30px;
+		    height:30px;
+		    box-shadow:0 0 0 2px #fff;
+		    float:left;
+		    margin-left:5px;
+		}
+		body{
+		    /*background: #EBFFD1;*/
+		    /*background-image: url("images/tu1.gif");*/
+		}
+		
+		.div_header{
+		    width:1000px;
+		    height:150px;
+		    /*background-color: #FA7E3E;*/
+		    background-color: #FAA862;
+		    margin:0 auto;
+		    /*margin-bottom: 3px;*/
+		}
+		
+		.logo{
+		    float:left;
+		    height:100%;
+		    width:50%;
+		    line-height:140px;
+		    font-size:2.3em;
+		    color: white;
+		    font-weight:800;
+		}
+		.logo-text{
+		    margin-left:20px;
+		    float:left;
+		}
+		
+		.right-right-div{
+		    margin-top: 10px;
+		    margin-right: 0;
+		    height:130px;
+		    width:200px;
+		    float:right;
+		    line-height:30px;
+		
+		}
+		.p-right-div{
+		    float:left;
+		    line-height:5px;
+		    font-size:1.0em;
+		    /*color: #EBFFD1;*/
+		    font-weight:400;
+		
+		}
+		.p-right-div-time{
+		    line-height:140px;
+		    font-size:1em;
+		    color: white;
+		    font-weight:600;
+		}
+		.clear{
+		    clear:both;
+		    margin-bottom: 0;
+		}
+		
+		/* 菜单 */
+		nav{
+		    width:1000px;
+		    height:45px;
+		    margin:0 auto;
+		    margin-bottom: 10px;
+		    margin-top: 10px;
+		    /*background-color: #FA8C2E;*/
+		    background-color: #FAA862;
+		
+		}
+		
+		nav ul{
+		    margin: 0px; /* 与外界元素的距离为0 */
+		    padding: 0px; /* 与内部元素的距离为0 */
+		}
+		
+		nav ul li{
+		    list-style-type:none;
+		    float:left; /* 向左漂移，将竖排变为横排 */
+		    color:white;
+		    height:45px;
+		    width:100px;
+		    text-align:center;
+		    line-height:45px;
+		    margin-left:75px;
+		}
+		
+		nav ul li:link{
+		    background: #53868B;
+		}
+		
+		nav ul li:hover {
+		    background-color: white;
+		}
+		
+		/*footer*/
+		footer{
+		    width:1000px;
+		    height: 100px;
+		    background: #FAA862;
+		    display:block;
+		    margin:0 auto;
+		    overflow:hidden;
+		    text-align:center;
+		    margin-top:20px;
+		}
+		.footer_bottom{
+		    margin-top: 30px;
+		}
+		
+		.div1{
+		    width: 1000px;
+		    /*height: 1000px;*/
+		    margin: 30px auto;
+		    /*background-color: #FA7E3E;*/
+		    /*font-family: 微软雅黑;*/
+		    font-size: 15px;
+		    text-align: center;
+		}
+		.div2{
+		    width: 1000px;
+		    /*height: 1000px;*/
+		    margin: 0 auto;
+		    /*background-color: white;*/
+		    /*font-family: 微软雅黑;*/
+		    font-size: 16px;
+		    text-align: center;
+		}
+		/*文章部分*/
+		.article_head{
+		
+		    /*background-color: white;*/
+		    width: 1000px;
+		    height: 200px;
+		    margin: 0 auto;
+		    margin-left: 0%;
+		    margin-bottom: 10px;
+		    /*font-size: 2em;*/
+		}
+		.article_head_h{
+		    margin: 0 auto;
+		    /*全文总标题*/ text-align: center;
+		    /*margin-left: 250px;*/
+		}
+		.article_h{
+		    margin-top: 30px;
+		    color: #0B143D;
+		}
+		.article_h2{
+		    margin-bottom: 10px;
+		    color: white;
+		    /*padding: 2px 2px 2px 2px;*/
+		    background-color: #BA4A3C;
+		    margin-left: 280px;
+		    margin-right: 280px;
+		}
+		.article_h3{
+		    margin-bottom: 30px;
+		    color: #0B143D;
+		}
+		.article_h4{
+		    color: #BA4A3C;
+		    text-align: left;
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    /*padding: 2px 2px 2px 2px;*/
+		}
+		.article_text{
+		    margin: 20px 10px 10px 10px;
+		}
+		.article_P{
+		    font-family: 微软雅黑;
+		    color: #585859;
+		    font-size: 1.2em;
+		    font-weight: 100;
+		    text-align: left;
+		    line-height: 1.5em;
+		    text-indent: 2em;
+		    margin: 0.5em 0em 1em 0em
+		}
+		.article_P2{
+		    font-family: 微软雅黑;
+		    color: #585859;
+		    font-size: 1.2em;
+		    font-weight: 100;
+		    text-align: center;
+		    line-height: 1.5em;
+		    text-indent: 2em;
+		    margin: 0.5em 0em 1em 0em
+		}
+		.article_img{
+		    margin-top: 5px;
+		    margin-bottom: 5px;
+		    width: 70%;
+		}
+		.article_span{
+		    color: orangered;
+		}
+	</style>
+	
+    <link rel="shortcut icon" href="images/tu1.jpg"/>
+    <link href="css/mdl.css?v=2" rel="stylesheet" type="text/css" media="all">
+    <script src="js/time.js"></script>
+</head>
+<body>
+<div class="div_header">
+    <div class="logo">
+        <img src="images/tu3.jpg" class="xwcms" onmouseover="this.src='images/tu3.jpg'" onmouseout="this.src='images/tu3.jpg'"/>
+        <div class="logo-text">吃货研究所</div>
+    </div>
+    <div class="right-right-div">
+        <p id="time1" class="p-right-div-time"></p>
+
+    </div>
+</div>
+<div class="clear">
+</div>
+<nav id="nav" class="nav-wrap">
+    <ul class="clearfix">
+        <li class="menuactive">
+            <a href="index.html">
+                首页
+            </a>
+        </li>
+        <li class="menuactive">
+            <a href="tclz.html">
+                冷知识
+            </a>
+        </li>
+        <li>
+            <a href="df.html">
+                地域美食
+            </a>
+        </li>
+
+        <li>
+            <a href="zt.html">
+                所长厨房
+            </a>
+        </li>
+        <li id="navEnd">
+            <a href="mdl.html">
+                所长测评
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="div1">
+    <div class="article_head">
+        <h1 class="article_head_h">双十一剁完手了吗？进来补个蹄儿吧！</h1>
+        <p>发布时间： 2020-02-02 22:22:22</p>
+        <br>
+        <img src="images/wenzhang_tu1.gif" alt="">
+    </div>
+    <div class="div2">
+        <p class="article_P">前几天麦当劳就开始大力宣传它们的5G炸鸡，于是今天所里赶紧点了份来尝尝。为什么没有一出来就马上吃呢？那当然是因为等着我们吃的东西太多了啊（狗头）！</p>
+        <img src="images/mdl1.gif" alt="" class="article_img">
+
+
+        <p class="article_P">除了5G炸鸡（麦麦脆汁鸡），我们干脆斥巨资把新品都试了一下，以下观点仅供参考，毕竟口味这个东西，千人千面。</p>
+
+        <p class="article_P2">麦麦炸鸡桶 ——108元</p>
+        <p class="article_P2">椰香伴咖伴沙 ——28元</p>
+        <p class="article_P2">莓莓车厘子麦旋风 ——15.5元</p>
+        <p class="article_P2">蜜桃派 ——9.5元</p>
+        <p class="article_P2">共花费：161元</p>
+
+        <img src="images/mdt2.jpg" alt="" class="article_img">
+
+       <p class="article_P">想一下集齐3个部位的炸鸡，索性就直接要了麦麦炸鸡桶，里边有5块麦麦脆汁鸡（鸡胸2块+琵琶腿2块+上腿排1块）、4块麦辣鸡翅、1份大薯条和3杯中可乐。</p>
+
+       <p class="article_P">桶里自带了麦辣鸡翅，正好可以把新品炸鸡和麦当劳自家的经典炸鸡对比一下。</p>
+        <img src="images/mdl3.gif" alt="" class="article_img">
+
+        <p class="article_P">麦麦脆汁鸡一共有3个部位：琵琶腿、上腿排、鸡胸</p>
+
+
+        <h2 class="article_h">01</h2>
+        <h3 class="article_h2">麦麦脆汁鸡VS麦辣鸡翅</h3>
+        <h3 class="article_h3">/ 真的很不一样 /</h3>
+
+        <p class="article_P">为什么要叫5G炸鸡呢？麦当劳说因为是用“5大黑科技打造的划时代炸鸡”：<span class="article_span">脆、大、汁、嫩、味</span>。emmm……我们感觉和现在的网络5G差不多，更像是实际的4G。</p>
+        <img src="images/mdl4.gif" alt="" class="article_img">
+
+
+        <p class="article_P">把麦麦脆汁鸡和麦辣鸡放一起，就能直观感受到两种炸鸡的不同。</p>
+
+       <h3 class="article_h4">❶ 比大小</h3>
+
+        <p class="article_P">麦麦脆汁鸡有<span class="article_span">琵琶腿、上腿排、鸡胸</span>3个部位，每个部位都挺大。相比之下，麦辣鸡翅的翅根和翅中看起来就显得气势弱了些。
+        </p>
+        <img src="images/mdl5.jpg" alt="" class="article_img">
+        <p>左边为麦麦脆汁鸡琵琶腿，右边为麦辣鸡翅根</p>
+
+        <h3 class="article_h4">❷ 比外皮</h3>
+
+        <p class="article_P">麦麦脆汁鸡的<span class="article_span">外皮颜色更深，颗粒感小</span>；麦辣鸡翅的外皮颜色浅，颗粒感粗。麦麦脆汁鸡就像是磨了皮再打了好几斤阴影的麦辣鸡。
+            以至于<span class="article_span">外皮厚度，肉眼看起来差不多</span>。</p>
+        <img src="images/mdl6.jpg" alt="" class="article_img">
+
+        <h3 class="article_h4">❸ 比口感</h3>
+
+
+        <p class="article_P">吃起来，<span class="article_span">麦麦脆汁鸡明显要比麦辣鸡更“汁”</span>，但这不排除因为个头更大肉更多的原因，鸡腿肉本身就会比鸡翅肉的肉汁更多。</p>
+
+        <p class="article_P">麦麦脆汁鸡的<span class="article_span">琵琶腿真的挺嫩</span>，轻轻一撕就撕开了，嚼起来鲜嫩多汁。不过麦麦脆汁鸡的鸡胸肉真的太柴了，简直噎嗓子（就是因为鸡胸肉，我们觉得5G中的“嫩”被扣掉，应该叫4G）。</p>
+
+        <p class="article_P">在“脆”上面，<span class="article_span">麦麦脆汁鸡确实要比麦辣鸡更优秀</span>，一口下去就是清脆利落的咔嚓声。都是外卖送来的，而麦辣鸡咬起来有点像开封放了一夜的薯片，稍微有点“皮”了。</p>
+        <img src="images/mdl7.gif" alt="" class="article_img">
+
+        <p> 麦麦脆汁鸡更脆更多汁麦</p>
+            <img src="images/mdl8.gif" alt="" class="article_img">
+        <p>辣鸡相比没那么多汁没那么脆</p>
+
+        <h3 class="article_h4">❹ 比味道</h3>
+
+
+        <p class="article_P">跟多汁一起伴随的是油腻感，大家普遍觉得麦麦脆汁鸡咬开之后油挺多，尤其是上腿排，油多到流出来，多吃两口就被腻到。有个别小姐姐觉得皮太咸了但是肉没味儿，如果不混着吃的话就有点灾难。
+        </p>
+        <p class="article_P">吃完一块麦麦脆汁鸡，味道其实没留下什么记忆点，<span class="article_span">和别的炸鸡调味相比没有辨识度，就……咸味的炸鸡</span>。而对比之下，麦辣鸡就真的挺辣的！</p>
+        <img src="images/mdl9.jpg" alt="" class="article_img">
+
+        <p class="article_P">
+        所长揪了3个小姐姐和我一起来吃，最后在麦麦脆汁鸡 VS麦辣鸡的抉择中，2人投了麦麦脆汁鸡，理由是不爱吃辣的；2人投了麦辣鸡，理由是麦麦脆汁鸡调味普通。
+        </p>
+        <p class="article_P">
+        那么，麦麦脆汁鸡值不值得去试试呢？所长觉得<span class="article_span">如果你想快点吃到炸鸡，喜欢脆脆的口感，然后不想吃辣，还是可以去试试的！</span>在3个部位里，最建议大家点琵琶腿，是最符合5G的！
+        </p>
+
+        <h2 class="article_h">02</h2>
+        <h3 class="article_h2">其他新品表现如何？</h3>
+        <h3 class="article_h3">/ 一言难尽 /</h3>
+
+       <p class="article_P">如果说麦麦脆汁鸡还可以去尝试一下的话，这几个新品就劝大家还是按需选择吧。
+       </p>
+
+        <h3 class="article_h4">■ 蜜桃派</h3>
+
+       <p class="article_P">掰开之后晶莹剔透的粉色，让小姐姐看了就发出赞叹，颜值真的挺不错。</p>
+        <img src="images/mdl10.jpg" alt="" class="article_img">
+
+
+        <p class="article_P">但是一口下去，<span class="article_span">浓烈的甜味真的上头，所谓的蜜桃味充满了人工香精的感觉</span>。大家尝了一口之后就没怎么动过了……</p>
+
+        <img src="images/mdl11.gif" alt="" class="article_img">
+
+        <h3 class="article_h4">■ 莓莓车厘子麦旋风</h3>
+
+        <p class="article_P">果酱很甜，冰淇淋很甜，饼干碎很甜，组合在一起就是甜味炸弹。<span class="article_span">如果你喜欢吃很甜的冰淇淋，那么可以去试试</span>。对冰淇淋容忍度很高的小姐姐表示，她觉得这个她可以。
+        </p>
+        <img src="images/mdl12.gif" alt="">
+
+        <h3 class="article_h4">■ 椰香伴咖伴沙</h3>
+
+        <p class="article_P">不得不说，包装还是很上档次的，纸盒防漏包装，里面还放了一个小冰袋。<span class="article_span">咖啡冰沙+椰果</span>，组合出了你难以想象的口感，记忆中不曾出现过。整体味道不苦微甜，如果你是惧怕黑咖啡但又有点想喝咖啡并且不太差钱的朋友，可以去试试。
+        </p>
+        <img src="images/mdl13.jpg" alt="" class="article_img">
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer_bottom">
+        <h1><a href="index.html">@吃货研究所</a></h1>
+        <p><a href="tclz.html">冷知识|</a><a href="df.html">地域美食|</a><a href="zt.html">所长厨房|</a><a href="mdl.html">所长测评</a></p>
+    </div>
+</footer>
+</body>
+</html>
