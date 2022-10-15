@@ -1,0 +1,447 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>吃货研究所</title>
+	<style>
+		*{
+		    font-family: 微软雅黑;
+		    margin:0;
+		    padding:0;
+		    list-style:none;
+		    outline:none;
+		    border:0;
+		}
+		body{
+		    overflow-x:hidden;
+		    /*background-image: url("bg_tu1.gif");*/
+		    background-color: #FAEFEFEF;
+		    /*设置背景图片*/
+		    /*background-attachment: fixed;*/
+		}
+		
+		a:link {
+		    color:black;
+		    text-decoration:none;
+		}
+		
+		a:visited {
+		    color:black;
+		    text-decoration:none;
+		}
+		
+		a:hover {
+		    color: black;
+		    text-decoration:none;
+		}
+		
+		a:active {
+		    color: black;
+		    text-decoration:none;
+		}
+		
+		/***鼠标悬浮图片旋转360度 begin***/
+		.xwcms {
+		    margin: 0 auto;
+		    margin-top: 25px;
+		    -webkit-border-radius: 110px;
+		    border-radius: 110px;
+		    -webkit-transition: -webkit-transform 0.4s ease-out;
+		    -moz-transition: -moz-transform 0.4s ease-out;
+		    -o-transition: -o-transform 0.4s ease-out;
+		    -ms-transition: -ms-transform 0.4s ease-out;
+		    width:80px;
+		    height:80px;
+		    box-shadow:0 0 0 4px #fff;
+		    float:left;
+		    margin-left:30px;
+		}
+		.xwcms:hover {
+		    -webkit-transform: rotateZ(360deg);
+		    -moz-transform: rotateZ(360deg);
+		    -o-transform: rotateZ(360deg);
+		    -ms-transform: rotateZ(360deg);
+		    transform: rotateZ(360deg);
+		}
+		/***鼠标悬浮图片旋转360度 begin***/
+		
+		
+		/***鼠标悬浮图片旋转360度 begin***/
+		.xwcms2 {
+		    margin: 0 auto;
+		    -webkit-border-radius: 110px;
+		    border-radius: 110px;
+		    -webkit-transition: -webkit-transform 0.4s ease-out;
+		    -moz-transition: -moz-transform 0.4s ease-out;
+		    -o-transition: -o-transform 0.4s ease-out;
+		    -ms-transition: -ms-transform 0.4s ease-out;
+		    width:30px;
+		    height:30px;
+		    box-shadow:0 0 0 2px #fff;
+		    float:left;
+		    margin-left:5px;
+		}
+		body{
+		    /*background: #EBFFD1;*/
+		    /*background-image: url("images/tu1.gif");*/
+		}
+		
+		.div_header{
+		    width:1000px;
+		    height:150px;
+		    /*background-color: #FA7E3E;*/
+		    background-color: #FAA862;
+		    margin:0 auto;
+		    /*margin-bottom: 3px;*/
+		}
+		
+		.logo{
+		    float:left;
+		    height:100%;
+		    width:50%;
+		    line-height:140px;
+		    font-size:2.3em;
+		    color: white;
+		    font-weight:800;
+		}
+		.logo-text{
+		    margin-left:20px;
+		    float:left;
+		}
+		
+		.right-right-div{
+		    margin-top: 10px;
+		    margin-right: 0;
+		    height:130px;
+		    width:200px;
+		    float:right;
+		    line-height:30px;
+		
+		}
+		.p-right-div{
+		    float:left;
+		    line-height:5px;
+		    font-size:1.0em;
+		    /*color: #EBFFD1;*/
+		    font-weight:400;
+		
+		}
+		.p-right-div-time{
+		    line-height:140px;
+		    font-size:1em;
+		    color: white;
+		    font-weight:600;
+		}
+		.clear{
+		    clear:both;
+		    margin-bottom: 0;
+		}
+		
+		/* 菜单 */
+		nav{
+		    width:1000px;
+		    height:45px;
+		    margin:0 auto;
+		    margin-bottom: 10px;
+		    margin-top: 10px;
+		    /*background-color: #FA8C2E;*/
+		    background-color: #FAA862;
+		
+		}
+		
+		nav ul{
+		    margin: 0px; /* 与外界元素的距离为0 */
+		    padding: 0px; /* 与内部元素的距离为0 */
+		}
+		
+		nav ul li{
+		    list-style-type:none;
+		    float:left; /* 向左漂移，将竖排变为横排 */
+		    color:white;
+		    height:45px;
+		    width:100px;
+		    text-align:center;
+		    line-height:45px;
+		    margin-left:75px;
+		}
+		
+		nav ul li:link{
+		    background: #53868B;
+		}
+		
+		nav ul li:hover {
+		    background-color: white;
+		}
+		
+		/*footer*/
+		footer{
+		    width:1000px;
+		    height: 100px;
+		    background: #FAA862;
+		    display:block;
+		    margin:0 auto;
+		    overflow:hidden;
+		    text-align:center;
+		    margin-top:20px;
+		}
+		.footer_bottom{
+		    margin-top: 30px;
+		}
+		
+		.div1{
+		     width: 1000px;
+		     /*height: 1000px;*/
+		     margin: 30px auto;
+		     /*background-color: #FA7E3E;*/
+		     /*font-family: 微软雅黑;*/
+		     font-size: 15px;
+		     text-align: center;
+		 }
+		.div2{
+		    width: 1000px;
+		    /*height: 1000px;*/
+		    margin: 0 auto;
+		    /*background-color: white;*/
+		    /*font-family: 微软雅黑;*/
+		    font-size: 16px;
+		    text-align: center;
+		}
+		/*文章部分*/
+		.article_head{
+		
+		    /*background-color: white;*/
+		    width: 1000px;
+		    height: 200px;
+		    margin: 0 auto;
+		    margin-left: 0%;
+		    margin-bottom: 10px;
+		    /*font-size: 2em;*/
+		}
+		.article_head_h{
+		    margin: 0 auto;
+		    /*全文总标题*/ text-align: center;
+		    /*margin-left: 250px;*/
+		}
+		.article_h{
+		    margin-top: 30px;
+		    color: #0B143D;
+		}
+		.article_h2{
+		    margin-bottom: 30px;
+		    color: white;
+		    /*padding: 2px 2px 2px 2px;*/
+		    background-color: #BA4A3C;
+		    margin-left: 280px;
+		    margin-right: 280px;
+		}
+		.article_text{
+		    margin: 20px 10px 10px 10px;
+		
+		}
+		.article_P{
+		    font-family: 微软雅黑;
+		    color: #585859;
+		    font-size: 1.2em;
+		    font-weight: 100;
+		    text-align: left;
+		    line-height: 1.5em;
+		    text-indent: 2em;
+		    margin: 0.5em 0em 1em 0em
+		}
+		.article_P2{
+		    font-family: 微软雅黑;
+		    color: #585859;
+		    font-size: 1.2em;
+		    font-weight: 100;
+		    text-align: center;
+		    line-height: 1.5em;
+		}
+		.article_img{
+		    margin-top: 5px;
+		    margin-bottom: 5px;
+		    width: 70%;
+		}
+		.article_span{
+		    color: orangered;
+		}
+	</style>
+    <link rel="shortcut icon" href="images/tu1.jpg"/>
+    <link href="css/tclz.css?v=2" rel="stylesheet" type="text/css" media="all">
+    <script src="js/time.js"></script>
+</head>
+<body>
+<div class="div_header">
+    <div class="logo">
+        <img src="images/tu3.jpg" class="xwcms" onmouseover="this.src='images/tu3.jpg'" onmouseout="this.src='images/tu3.jpg'"/>
+        <div class="logo-text">吃货研究所</div>
+    </div>
+    <div class="right-right-div">
+        <p id="time1" class="p-right-div-time"></p>
+
+    </div>
+</div>
+<div class="clear">
+</div>
+<nav id="nav" class="nav-wrap">
+    <ul class="clearfix">
+        <li class="menuactive">
+            <a href="index.html">
+                首页
+            </a>
+        </li>
+        <li class="menuactive">
+            <a href="tclz.html">
+                冷知识
+            </a>
+        </li>
+        <li>
+            <a href="df.html">
+                地域美食
+            </a>
+        </li>
+
+        <li>
+            <a href="zt.html">
+                所长厨房
+            </a>
+        </li>
+        <li id="navEnd">
+            <a href="mdl.html">
+                所长测评
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="div1">
+<div class="article_head">
+    <h1 class="article_head_h">糖炒栗子有糖吗？有，但不是为了吃……</h1>
+    <p>发布时间： 2020-02-02 22:22:22</p>
+    <br>
+    <img src="images/wenzhang_tu1.gif" alt="">
+</div>
+<div class="div2">
+    <p class="article_P">
+        紫烂山梨红皱枣，总输易栗十分甜。在日益萧瑟的深秋里，热乎乎的糖炒栗子可称“恩物”。
+        相信许多人在经过手剥牙咬，才把香甜的栗仁送进嘴里的时候，都会在内心发出天问：</p>
+        <p class="article_P">为什么栗子要在一大堆砂子里炒？为什么砂子里要洒上根本渗不进硬壳的糖？</p>
+
+        <img src="images/tclz_tu1.jpg" alt="" class="article_img">
+        <p>糖炒栗子</p>
+
+
+        <h1 class="article_h">01</h1>
+        <h2 class="article_h2">糖炒栗子没有糖味？</h2>
+        <p class="article_P">
+        第一个问题很好回答，砂石的吸热能力强，能在较长时间内保持稳定的温度，这样就可以<span class="article_span">保证栗子受热均匀</span>，同样的原理也可以用在炒带壳花生上。</p>
+        <p class="article_P">这题连作诗达人、盖章能手乾隆皇帝都会：“小熟大者生，大熟小者焦。<span class="article_span">大小得均熟，所待火候调</span>。”这几句顺口溜一样的诗虽然代表了他的文笔水平，但不是他的原创，
+        而是“借鉴”了辽代大儒萧韩家奴的掌故，此人曾经主管南京栗园——辽朝所说的南京不是现在的江苏省会，而是北京西南一带，正是产栗子的地方。</p>
+        <p class="article_P">后来辽兴宗询问萧韩家奴在外见闻时，他借炒栗子的诀窍来讲了讲“不能一刀切”的用人观：“臣惟知炒栗：<span class="article_span">小者熟，则大者必生；大者熟，则小者必焦</span>。使大小均熟，始为尽美。”似乎乾隆只看懂了字面意思。</p>
+    <img src="images/tclz_tu2.jpg" alt="" class="article_img">
+        <p>沙子是必需品 | Pixabay</p>
+
+        <p class="article_P">炒栗子表面黏糊糊的糖，好像只有把手指弄脏的效果，就像鸡蛋灌饼里的蔫生菜一样让人不爽。而且因为稀薄的糖浆无法透过栗子皮，并不会增加栗仁的甜度。</p>
+        <p class="article_P">不过店家也不是为了给栗子增加甜味而放糖的，<span class="article_span">糖的作用是粘去表皮杂质</span>，让栗子看上去油光闪亮，闻起来甜香扑鼻，“糖炒”的名字也让顾客感觉比单纯的“炒”更诱人。</p>
+
+
+        <h1 class="article_h">02</h1>
+        <h2 class="article_h2">家有栗树，等于有矿</h2>
+
+       <p class="article_P2">栗子在中国的种植历史可以追溯到周代，采集食用历史就更久远了。</p>
+        <img src="images/tclz_tu3.jpg" alt="">
+        <p>甲骨文里的“栗”字非常形象地刻画出结满毛栗子的树形</p>
+        <p class="article_P">
+        《诗经》里栗子的身影频频出现，不仅生长在山上、低地上，还被当成行道树种植，国君的御苑里也种有栗树，栗子是祭祀的供品[“馈食之笾（biān），其实栗”]，<span class="article_span">木材还是制作宗庙牌位的指定原料</span>。</p>
+         <p class="article_P">《韩非子》中就记载了秦国遭遇饥荒，范雎请求秦昭襄王将内苑的栗子、橡实拿来赈灾的故事。拥有大量栗树的人家就等于有了取之不尽的财富，“燕、秦千树栗，此其人与千户侯等”。</p>
+
+         <p class="article_P">栗树高大茂盛，意大利西西里岛有一棵至今尚存的“百骑栗树”，传说它的枝叶曾为阿拉贡王国的百名骑士遮挡雷雨，故得此名。</p>
+        <img src="images/tclz_tu4.jpg" alt="" class="article_img">
+      <p>图片：Wikimedia Commons</p>
+    <p class="article_P">
+        栗木质地坚实，所以“栗”字也有坚硬之意，在此基础上产生了表达害怕的形声字“慄”，例如“不寒而慄”，现在已经二字合一。
+        汉代帝王陵寝原本采用大量柏木垒成“黄肠题凑”，后来因为柏木材料砍伐殆尽改成质地、粗细相近的栗木，但颜色较深，被后世讥为“黑肠题凑”。
+    </p>
+
+        <h1 class="article_h">03</h1>
+        <h2 class="article_h2">栗子食用指南</h2>
+        <p class="article_P">
+        古人吃栗子通常比较讲究原汁原味，蒸、煮、煨、生吃均可。“堆盘栗子炒深黄，客到长谈索酒尝”，至迟宋代已经有了“炒栗子”的记载，诗人陆游不仅爱猫也爱栗子，他在年老时写诗感叹牙齿松动了，<span class="article_span">幸好还能吃点炒栗当夜宵</span>，
+            回忆起年轻时吃栗子的往事：“唤起少年京辇梦，和宁门外早朝时"，原来<span class="article_span">在等着上朝时，也不忘抓紧时间吃点栗子</span>。
+    </p><p class="article_P">
+        陆游还在笔记里回忆了一段往事，当年汴京最有名的栗子铺叫“李和煼（chǎo）（炒）栗”，属于只能被模仿不能被超越的水平，及至北方沦陷多年后，南宋使者出使燕山，李和的两个儿子为故国来使送去十包栗子，不胜唏嘘。
+    </p>
+
+        <p class="article_P">火烤是最简单的办法，但要注意先切一个小口，否则栗子会爆裂。</p>
+    <img src="images/ctlz_tu5.jpg" alt=""  class="article_img">
+    <p>图片：Pixabay</p>
+        <p class="article_P">
+        但那时的炒法和今天的糖炒栗子可能不同，南宋林洪在《山家清供》里写道，烹调栗子的办法，是在形状像茶壶的“铁铫（diào）”中放一个蘸了油的栗子和一个蘸水的栗子，再堆满四十七个栗子，将铁铫放进炭火里加热，听到有爆裂声就熟了。
+    </p><p class="article_P">
+        明朝人王象晋记录了类似的炒栗办法：选两个平底栗子，将底分别用油和水涂湿，扣在一起放在锅底，上面堆满栗子，盖严后烧熟；或是把大栗子的壳底用刀切个十字口，底向下在锅里排满，绕着锅撒一撮盐，加热焖熟。
+    </p><p class="article_P">
+        更复杂的吃法，还有将栗子切薄片和橄榄片一起吃的“<span class="article_span">梅花脯</span>”，山药和栗子一起用羊肉汤炖煮的“<span class="article_span">金玉羹</span>”，栗子粉混合糯米粉用蜜水搅拌蒸熟的“<span class="article_span">栗糕</span>”。晚近时的<span class="article_span">栗子扒白菜、栗子烧鸡</span>就更加为我们所熟悉了。
+    </p>
+
+        <h1 class="article_h">04</h1>
+    <h2 class="article_h2">栗子也有咸党？！</h2>
+    <p class="article_P">
+        同属东亚文化圈的日本、韩国吃栗子的历史也相当悠久，这两个国家主要种植日本栗（Castanea crenata Sieb.& Zucc.），和中国板栗（C. mollissima Bl.）、欧洲栗（C. sativa Mill.）、美洲栗（C. dentata Borkh.）同属不同种。
+    </p><p class="article_P">
+        因为<span class="article_span">日语里去除栗子皮的“捣”和“胜”发音相同</span>，古代武士认为它有象征胜利的口彩，日本好几个地方都流传着“在某位名人的加持下，此地栗子树一年结了三次果”的故事，
+    相关名人有空海大师、德川家康、亲鸾法师等等，类似于中国同一个美食传说有着刘秀、李世民、慈禧等源头。</p>
+    <p class="article_P">日本传统的栗子吃法既有栗金团、栗子羊羹一类甜品，又有栗子饭这样的主食，在西方口味影响下还出现了栗子蛋糕、栗子冰激凌等等。</p>
+
+    <img src="images/tclz_tu5.jpg" alt="" class="article_img">
+        <p>栗子饭
+    </p>
+    <p class="article_P">
+        栗子也是韩国每年中秋节必吃的食物，中国古代有“桃花源”的乌托邦神话，韩国其实也有，但他们的乌托邦叫“<span class="article_span">栗岛国</span>”，是反抗暴政的好汉洪吉童远航栖身之处，也可见栗子的重要性了。
+    </p>
+    <p class="article_P">
+        在欧洲，栗子曾经是重要的碳水化合物来源，高淀粉含量使它可以替代主食，口感又比同样淀粉含量较高的橡子要好得多，有“<span class="article_span">穷人的面包</span>”之称。如果想要了解栗子做主食的吃法，
+        不妨去拿破仑的家乡科西嘉岛一品其味，栗子粉可以摊薄饼、炸面圈，虽然热量不低，但我们难以抗拒它的美味。
+    </p>
+    <img src="images/tcliz_tu6.jpg" alt="" class="article_img">
+        <p>勃朗峰栗子蛋糕</p>
+
+        <p class="article_P">除此之外，还有鼎鼎大名的栗子蛋糕，国内我们看惯的蛋糕造型，是将细腻的栗子蓉和奶油搅拌后，放在打底的海绵蛋糕片上食用，这种做法在法国叫“勃朗峰”，奶油就是栗子山峰上的积雪。
+            另有一种栗子蛋糕是用栗子粉替代面粉烤成的，看上去相当扎实。
+    </p>
+    <p class="article_P">
+        糖渍栗子也是一种历史悠久的甜品，将去皮的完整栗子在加了香草和白兰地的糖浆中浸煮多次，不断提高糖浆的浓度，直到栗子吸收糖分达到饱和，成为不折不扣的“<span class="article_span">糖栗子</span>”，是《茶花女》女主角的最爱。
+    </p>
+    <img src="images/tcliz_tu7.jpg" alt="" class="article_img">
+       <p> 放在铁板上的烤栗子</p>
+<p class="article_P">
+        欧洲的“原教旨吃栗法”通常是<span class="article_span">用火将生栗子烧熟</span>，所以也有了“火中取栗”的寓言故事。为了让栗子不至于被烧糊，一般将它们架在铁丝网上或放在有洞的陶锅里烧烤。
+    煮栗子则以咸口为多，一般在<span class="article_span">加盐和茴香的水中煮熟</span>。</p>
+   <p class="article_P"> 加泰罗尼亚地区至今仍有专门的“栗子节”，在11月初，人们要在脸上抹上灰尘，跳过烤栗子的篝火祈求好运，后来也和万圣节的一些庆典结合在一起。</p>
+
+
+        <h1 class="article_h">05</h1>
+        <h2 class="article_h2">走向末日的美洲栗</h2>
+        <p class="article_P">
+        在北美洲，美洲栗的分布原本也极为广泛，为人们无私地提供了食物和木材。因为<span class="article_span">栗木单宁含量较高具有耐腐性</span>，19世纪的美国铁道枕木、电线杆、煤井支柱等几乎都是栗木制成，可以说为工业发展立下了汗马功劳。
+            </p><p class="article_P">
+        但如今，美洲栗几乎全部倒在了<span class="article_span">栗疫病菌</span>（Cryphonectria parasitica）的攻击下。中国板栗和日本栗对栗疫病有抗性，但美洲栗、欧洲栗则不具备，这种致病真菌正是附在进口的亚洲栗树上引入北美的。
+            </p>
+            <img src="images/tcliz_tu8.jpg" alt="" class="article_img">
+        <p>美国19世纪描绘采摘栗子的版画</p>
+        <p class="article_P">
+        1906年的检查结果显示，纽约布朗克斯区98%的栗树已被感染。真菌可以通过空气传播，在几十年内让30亿棵美洲栗树变成了“活死树”——当主茎死亡时，根部会萌出新芽，随后继续遭到感染，因此被归类为功能绝种。
+            目前仅有数百棵幸存，成为第一个因真菌感染而濒危的物种。美洲栗的命运令人感叹，也让人生出“不如珍惜眼前栗”的感受。
+            </p><p class="article_P">
+        所以，不来一颗吗？</p>
+
+</div>
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="footer_bottom">
+        <h1><a href="index.html">@吃货研究所</a></h1>
+        <p><a href="tclz.html">冷知识|</a><a href="df.html">地域美食|</a><a href="zt.html">所长厨房|</a><a href="mdl.html">所长测评</a></p>
+    </div>
+</footer>
+</body>
+</html>
